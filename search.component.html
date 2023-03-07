@@ -1,0 +1,33 @@
+<section class="search">
+  <div class="top">
+    <img src="https://logosbynick.com/wp-content/uploads/2018/04/spotify-logo.png" alt="Aleq" width="200" height="115" >
+    <h1>Need Music?</h1>
+    <p class="need">Use MySpotify App to find new music</p>
+  </div>
+
+  <form>
+  <div class="form-group">
+  <input class="input"
+    type="text"
+    [(ngModel)]="searchStr"
+    placeholder="Search Artist"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  </div>
+  <button
+  class="button"
+  type="submit"
+  (click)="searchSong()"
+  name="submit"
+  value="submit"
+  >Submit  </button>
+  </form>
+  <ng-container *ngIf="listOfMusic !== null">
+  <div *ngFor="let artist of listOfMusic">
+  <p class="name">Profile of {{ artist.name }}</p>
+  <p>Genres: {{ artist.genres }}</p>
+  <p>Followers: {{ artist.followers.total }}</p>
+  <p><img src="{{ artist.images[2].url }}"></p>
+  </div>
+  </ng-container>
+</section>
