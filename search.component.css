@@ -1,0 +1,40 @@
+*
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+.search /*for style of search section design*/
+{
+  width: 100%;
+  padding: 78px 0px;
+
+}
+
+.button /*for style of button design*/
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: brown;
+  width: 100px;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 5%;
+  text-align: center;
+}
+.input /*for style of input form design*/
+{
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-radius: 5%;
+}
+.top h1 /*for style of h1 text design*/
+{
+  color:brown ;
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
